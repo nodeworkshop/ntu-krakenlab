@@ -1,15 +1,21 @@
 #Kraken lab TaskManager code snippets
 
-##Create dust page create.dust
+##Add a create-form to the tasks\index.dust
 
 ```html
 <form name="create" method="post"/>
 	<textarea name="task"></textarea>
 	<input type="submit" name="submit"/>
 </form>
+
+...... rest of the page
 ```
 
 ##Add a route for posting details
+
+```
+controllers\tasks\index.js
+```
 
 ```javascript
 if(req.session && !req.session.tasks){
@@ -17,7 +23,12 @@ if(req.session && !req.session.tasks){
     req.session.tasks = [];
 }
 
-router.post('/tasks', function (req, res) {
+router.get('/', function (req, res) {
+	model.tasks = req.session.tasks;
+	res.render('tasks/index', model);
+});
+
+router.post('/', function (req, res) {
     if(req.body.task){
         req.session.tasks.push(req.body.task);
     }
@@ -25,5 +36,3 @@ router.post('/tasks', function (req, res) {
     res.redirect('/');
 });
 ```
-
-##Add a new route
