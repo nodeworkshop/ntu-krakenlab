@@ -1,6 +1,6 @@
 #Kraken lab TaskManager code snippets
 
-##Create dust page
+##Create dust page create.dust
 
 ```html
 <form name="create" method="post"/>
