@@ -1,0 +1,16 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{@pre type="content" key="greeting"/}</h1>
+    <form name="create" method="post"/>
+		<textarea name="task"></textarea>
+		<input type="hidden" name="_csrf" value="{_csrf}" />
+		<input type="submit" name="submit"/>
+	</form>
+	<h2>List of Tasks</h2>
+	<ul>
+		{#tasks}
+			<li>{.}</li>
+		{/tasks}
+	</ul>
+{/body}
