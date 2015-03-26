@@ -6,6 +6,7 @@
 <form name="create" method="post"/>
 	<textarea name="task"></textarea>
 	<input type="submit" name="submit"/>
+	<input type="hidden" name="_csrf" value="<%= _csrf %>" />
 </form>
 
 ...... rest of the page
