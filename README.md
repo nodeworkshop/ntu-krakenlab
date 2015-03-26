@@ -22,7 +22,7 @@ router.post('/tasks', function (req, res) {
         req.session.tasks.push(req.body.task);
     }
     //return to user to the listing page
-    res.redirect('/tasks');
+    res.redirect('/');
 });
 ```
 
