@@ -55,8 +55,9 @@ router.get('/', function (req, res) {
 public\templates\tasks\index.dust
 ```
 
-
+Append the following to the end of the file.
 ```html
+.......
 <h2>List of Tasks</h2>
 	<ul>
 		{#tasks}
