@@ -1,5 +1,23 @@
 #Kraken lab TaskManager code snippets
 
+##Disable Lusca Security
+```
+config\config.json
+```
+
+```javascript
+       "appsec": {
+            "module": {
+                "name": "lusca",
+                "arguments": [
+                    {
+                        "csrf": false
+                    }
+                ]
+            }
+        },
+```
+
 ##Add a create-form to the tasks\index.dust
 
 ```html
