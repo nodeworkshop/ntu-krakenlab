@@ -4,9 +4,7 @@
 
 This is lab was part of a kraken.js workshop held at NTU on 27th March 2015.
 
-The slides are available here:
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/46407994" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+The slides are available here: http://www.slideshare.net/AeshanWijetunge/krakenjs-lab-primer
 
 ##Disable Lusca Security
 ```
